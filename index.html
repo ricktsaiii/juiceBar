@@ -6,99 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: auto;
-      text-align: center;
-      height: 100vh;
-    }
-
-    .bg01 {
-      background: url(.//素材/bg01.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 65vh;
-    }
-
-
-    .bg02 {
-      background: url(.//素材/bg02.png);
-      background-repeat: no-repeat;
-      height: 35%;
-      overflow: hidden;
-
-    }
-
-
-    .hole {
-      width: 200px;
-      height: 200px;
-      border: 10px solid rgb(108, 191, 199);
-      background-color: rgb(127, 216, 224);
-
-    }
-
-    .red {
-      background-image: url(./素材/orange.png);
-      background-size: contain;
-      background-position: center;
-
-    }
-
-    .blue {
-      background-image: url(./素材/orange_cut.png);
-      background-size: contain;
-      background-position: center;
-    }
-
-    #game {
-      /* cursor: url(檔案路徑) 滑鼠x座標 滑鼠y座標, auto */
-      cursor: url(./素材/knif.png) 50 50, auto;
-      border-collapse: collapse;
-
-
-
-    }
-
-    body table {
-      margin: auto;
-
-    }
-
-    .text {
-
-      /* margin-top: 50px; */
-      font-size: 1.5rem;
-      font-family: sans-serif;
-      color: sienna;
-    }
-
-    #start {
-      font-size: 2rem;
-      width: 600px;
-      height: 40px;
-      display: block;
-      text-align: center;
-      cursor: pointer;
-      line-height: 40px;
-      color: #fff;
-      background-color: #000;
-      transition: all .3s linear;
-      margin-bottom: 50px;
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-
-    }
-
-    #start:hover {
-      background-color: #666;
-    }
-  </style>
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 
@@ -125,9 +33,10 @@
   </div>
   <div class="bg02">
     <div class="text">
-
+    <div class="button">
       <input type="button" value="開始遊戲" id="start">
-      目前分數：<span id="score">0</span>
+</div>
+      SCORE：<span id="score">0</span>
       <br>
       最高分
       <br>

@@ -1,0 +1,149 @@
+<style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: auto;
+      text-align: center;
+      height: 100vh;
+    }
+
+    .bg01 {
+      background: url(.//素材/bg01.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 65vh;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+
+
+    .bg02 {
+      background: url(.//素材/bg02.png);
+      background-repeat: no-repeat;
+      height: 35vh;
+      overflow: hidden;
+    }
+
+
+    .hole {
+      width: 200px;
+      height: 200px;
+      border: 10px solid rgb(108, 191, 199);
+      background-color: rgb(127, 216, 224);
+
+    }
+
+    .red {
+      background-image: url(./素材/orange.png);
+      background-size: contain;
+      background-position: center;
+
+    }
+
+    .blue {
+      background-image: url(./素材/orange_cut.png);
+      background-size: contain;
+      background-position: center;
+    }
+
+    #game {
+      /* cursor: url(檔案路徑) 滑鼠x座標 滑鼠y座標, auto */
+      cursor: url(./素材/knif.png) 50 50, auto;
+      border-collapse: collapse;
+
+
+
+    }
+
+    body table {
+      margin: auto;
+
+    }
+
+    .text {
+
+      /* margin-top: 50px; */
+      font-size: 1.5rem;
+      font-family: sans-serif;
+      color: sienna;
+
+    }
+
+    .button{
+      display: flex;
+      justify-content: center; 
+      /* align-items: center;  */
+    }
+
+    #start {
+      font-size: 2rem;
+      width: 600px;
+      height: 45px;
+      text-align: center;
+      cursor: pointer;
+      line-height: 40px;
+      color: #fff;
+      background-color: #424242;
+      box-shadow: 0 10px #5b5b5b;
+      transition: all .0s linear;
+      margin-bottom: 50px;
+      position: relative;
+      display: flex;
+      justify-content: center; 
+      align-items: center; 
+      border: 0;
+      border-radius: 15px;
+      
+    }
+
+    #start:hover {
+      background-color: #121212;
+    }
+    
+    #start:active {
+      background-color: #424242;
+      box-shadow: 0 10px #5b5b5b;
+      transform: translateY(20%);
+
+    }
+
+    @media(max-height: 880px){
+
+      .hole {
+      width: 150px;
+      height: 150px;
+      border: 8px solid rgb(108, 191, 199);
+      background-color: rgb(127, 216, 224);
+    }
+}
+@media(max-height: 700px){
+
+.hole {
+width: 130px;
+height: 130px;
+border: 8px solid rgb(108, 191, 199);
+background-color: rgb(127, 216, 224);
+}
+
+#start {
+      font-size: 2rem;
+      width: 500px;
+      height: 100%;
+      display: block;
+      text-align: center;
+      cursor: pointer;
+      line-height: 40px;
+      color: #fff;
+      background-color: #424242;
+      box-shadow: 0 8px #5b5b5b;
+      transition: all .0s linear;
+      margin-bottom: 10px;
+      position: relative;
+      
+    }
+
+}
+  </style>
